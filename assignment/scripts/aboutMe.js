@@ -19,7 +19,7 @@ let adventurous = true;
 // 8 - Create a variable named `food`, and set its value to a string of your favorite food
 let food = 'Speghetti';
 // 9 - Create a variable called `pets` and set it to the value of the number of pets you have
-let pets = 1;
+let pets = 5;
 // 10 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
 let friendsPets = 3;
 // 11 - Add two pets to your `pets` variable
@@ -62,6 +62,30 @@ else {
 // be sure to think through all the scenarios.
 // console.log `mostPets` after the conditional has run.
 
+let mostPets;
+
+if (pets >= friendsPets){
+  mostPets = pets;
+
+}
+else if (pets < friendsPets) {
+  mostPets = friendsPets;
+
+}
+console.log(mostPets);
+
+
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
+switch (true) {
+  case pets >= friendsPets:
+    mostPets = pets;
+    break;
+  case pets < friendsPets:
+    mostPets = pets;
+    break;
+}
+console.log(mostPets);
 
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
+pets >= friendsPets ? mostPets=pets : mostPets=friendsPets;
+console.log(mostPets);
